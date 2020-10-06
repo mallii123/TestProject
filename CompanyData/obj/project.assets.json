@@ -9483,11 +9483,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\CompanyData\\CompanyData.csproj",
+      "projectUniqueName": "C:\\Users\\Patryk\\Desktop\\Projekty\\Projects\\CompanyData\\CompanyData.csproj",
       "projectName": "CompanyData",
-      "projectPath": "D:\\Projects\\CompanyData\\CompanyData.csproj",
+      "projectPath": "C:\\Users\\Patryk\\Desktop\\Projekty\\Projects\\CompanyData\\CompanyData.csproj",
       "packagesPath": "C:\\Users\\Patryk\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\CompanyData\\obj\\",
+      "outputPath": "C:\\Users\\Patryk\\Desktop\\Projekty\\Projects\\CompanyData\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Microsoft\\Xamarin\\NuGet\\"
