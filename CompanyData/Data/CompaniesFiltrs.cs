@@ -1,10 +1,9 @@
-﻿using CompanyData.Models;
-using Microsoft.EntityFrameworkCore.Internal;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using System.Threading.Tasks;
+using CompanyData.Models;
+using Microsoft.EntityFrameworkCore.Internal;
 
 namespace CompanyData.Data
 {
@@ -68,7 +67,7 @@ namespace CompanyData.Data
              from company in companies
              where (
                      from employee in company.Employees
-                     where companySearchParameters.EmployeeJobTitles.Contains(employee.JobTitle)
+                     where companySearchParameters.EmployeeJobTitles.Contains(employee.JobTitle.Value)
                      select company
                      ).Count() > 0
              select company;
