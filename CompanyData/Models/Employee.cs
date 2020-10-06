@@ -19,13 +19,13 @@ namespace CompanyData.Models
         [Required]
         [DataType(DataType.Date)]
         public virtual DateTime? DateOfBirth { get; set; }
-        [Range(1, 4, ErrorMessage = "JobTitle is required")]
-        public virtual JobTitle JobTitle { get; set; }
+        [Required]
+        [Range(0, 3, ErrorMessage = "JobTitle is not correct")]
+        public virtual JobTitle? JobTitle { get; set; }
         public virtual Company Company { get; set; }
     }
     public enum JobTitle
     {
-        None,
         Administrator, 
         Developer, 
         Architect, 
