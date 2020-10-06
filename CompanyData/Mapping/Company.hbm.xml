@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="CompanyData.Models" assembly="CompanyData">
+
+	<class name="Company" table="Company">
+		<id name="ID" column="ID">
+			<generator class="identity" />
+		</id>
+		<property name="Name" column="Name" />
+		<property name="EstablishmentYear" column="EstablishmentYear" />
+		 
+	     <set name = "Employees" table = "Employee" cascade = "all-delete-orphan" inverse = "true">
+			<key column = "CompanyID"/> 
+			<one-to-many class = "Employee"/> 
+		</set> 
+		
+	</class>
+
+</hibernate-mapping>
