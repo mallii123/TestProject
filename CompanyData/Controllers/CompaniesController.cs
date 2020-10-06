@@ -1,8 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using CompanyData.Models;
 using CompanyData.Data;
-using Microsoft.AspNetCore.Diagnostics;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.AspNetCore.Authorization;
 
 namespace CompanyData.Controllers

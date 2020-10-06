@@ -1,9 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
 using System.Linq;
+using System.Collections.Generic;
 using NHibernate;
 using CompanyData.Models;
 using CompanyData.Design;
-using System;
+
 
 namespace CompanyData.Data
 {
