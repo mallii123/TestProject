@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using System.Collections.Generic;
 using NHibernate;
 using CompanyData.Models;
@@ -24,7 +23,7 @@ namespace CompanyData.Data
                 }             
                 return company.ID;
             }
-            catch (Exception e)
+            catch
             {
                 return -1;
             }
@@ -41,7 +40,7 @@ namespace CompanyData.Data
                 CompaniesFiltrs CompaniesFiltrs = new CompaniesFiltrs(companies, CompanySearchParameters);
                 return CompaniesFiltrs.GetFiltredCompaniesByParameters();
             }
-            catch (Exception e)
+            catch
             {
                 return companies;
             }
@@ -61,7 +60,7 @@ namespace CompanyData.Data
                 }
                 return true;
             }
-            catch(Exception e)
+            catch
             {
                 return false;
             }
@@ -82,7 +81,7 @@ namespace CompanyData.Data
                 }
                 return true;
             }
-            catch (Exception e)
+            catch
             {
                 return false;
             }

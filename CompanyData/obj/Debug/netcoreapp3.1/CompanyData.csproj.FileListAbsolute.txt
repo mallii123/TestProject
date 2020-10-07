@@ -344,3 +344,4 @@ C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\obj\Debug\netcoreapp3.1\st
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\obj\Debug\netcoreapp3.1\CompanyData.dll
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\obj\Debug\netcoreapp3.1\CompanyData.pdb
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\obj\Debug\netcoreapp3.1\CompanyData.genruntimeconfig.cache
+C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\obj\Debug\netcoreapp3.1\CompanyData.csprojAssemblyReference.cache
