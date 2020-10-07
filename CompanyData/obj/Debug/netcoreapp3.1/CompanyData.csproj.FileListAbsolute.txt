@@ -232,10 +232,13 @@ C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\Mi
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\NHibernate.dll
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\nunit.framework.dll
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\Remotion.Linq.dll
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\Remotion.Linq.EagerFetching.dll
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
@@ -330,7 +333,6 @@ C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\ru
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\obj\Debug\netcoreapp3.1\CompanyData.csprojAssemblyReference.cache
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\obj\Debug\netcoreapp3.1\CompanyData.AssemblyInfoInputs.cache
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\obj\Debug\netcoreapp3.1\CompanyData.AssemblyInfo.cs
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\obj\Debug\netcoreapp3.1\CompanyData.csproj.CoreCompileInputs.cache
