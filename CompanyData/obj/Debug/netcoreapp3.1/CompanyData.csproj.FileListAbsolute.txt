@@ -170,8 +170,6 @@ D:\Projects\CompanyData\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.d
 D:\Projects\CompanyData\obj\Debug\netcoreapp3.1\CompanyData.csproj.CoreCompileInputs.cache
 D:\Projects\CompanyData\obj\Debug\netcoreapp3.1\CompanyData.MvcApplicationPartsAssemblyInfo.cache
 D:\Projects\CompanyData\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
-C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
-C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\App.config
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\appsettings.json
@@ -325,6 +323,8 @@ C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\ru
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
@@ -336,8 +336,6 @@ C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\ru
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\obj\Debug\netcoreapp3.1\CompanyData.AssemblyInfoInputs.cache
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\obj\Debug\netcoreapp3.1\CompanyData.AssemblyInfo.cs
-C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\obj\Debug\netcoreapp3.1\CompanyData.csproj.CoreCompileInputs.cache
-C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\obj\Debug\netcoreapp3.1\CompanyData.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\obj\Debug\netcoreapp3.1\CompanyData.RazorTargetAssemblyInfo.cache
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\obj\Debug\netcoreapp3.1\CompanyData.csproj.CopyComplete
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\obj\Debug\netcoreapp3.1\staticwebassets\CompanyData.StaticWebAssets.Manifest.cache
@@ -345,3 +343,7 @@ C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\obj\Debug\netcoreapp3.1\st
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\obj\Debug\netcoreapp3.1\CompanyData.dll
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\obj\Debug\netcoreapp3.1\CompanyData.pdb
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\obj\Debug\netcoreapp3.1\CompanyData.genruntimeconfig.cache
+C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll
+C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\log4net.config
+C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\obj\Debug\netcoreapp3.1\CompanyData.csproj.CoreCompileInputs.cache
+C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\obj\Debug\netcoreapp3.1\CompanyData.MvcApplicationPartsAssemblyInfo.cache

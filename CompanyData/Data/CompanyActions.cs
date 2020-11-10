@@ -5,12 +5,13 @@ using NHibernate;
 using CompanyData.Models;
 using CompanyData.Design;
 using CompanyData.Helpers;
+using log4net;
 
 namespace CompanyData.Data
 {
     public class CompanyActions : ICompanyRequiredHttpActions
     {
-        private static readonly log4net.ILog _log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        private static readonly ILog _log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         public long Create(Company company)
         {
             try

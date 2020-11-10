@@ -6,6 +6,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Authentication;
 using CompanyData.Helper;
 using CompanyData.Services;
+using Microsoft.Extensions.Logging;
 
 namespace CompanyData
 {
@@ -20,7 +21,6 @@ namespace CompanyData
 
         public void ConfigureServices(IServiceCollection services)
         {
-
             services.AddControllers();
             services.AddControllers().AddNewtonsoftJson(options =>
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
@@ -30,8 +30,9 @@ namespace CompanyData
             services.AddScoped<IUserService, UserService>();
         }
 
-      public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+      public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
+            loggerFactory.AddLog4Net();
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
