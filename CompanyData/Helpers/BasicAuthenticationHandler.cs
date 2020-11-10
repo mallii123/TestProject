@@ -10,7 +10,7 @@ using Microsoft.Extensions.Options;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Authorization;
 using CompanyData.Services;
-using CompanyData.Entities;
+using CompanyData.Models;
 
 namespace CompanyData.Helper
 {
@@ -56,7 +56,8 @@ namespace CompanyData.Helper
             if (user == null)
                 return AuthenticateResult.Fail("Invalid Username or Password");
 
-            var claims = new[] {
+            var claims = new[] 
+            {
                 new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
                 new Claim(ClaimTypes.Name, user.Username),
             };

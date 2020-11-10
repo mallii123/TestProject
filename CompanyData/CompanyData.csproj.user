@@ -16,4 +16,9 @@
     <WebStackScaffolding_DbContextTypeFullName>CompanyData.Data.CompanyDataContext</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
   </PropertyGroup>
+  <ItemGroup>
+    <None Update="Properties\log4net.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
 </Project>

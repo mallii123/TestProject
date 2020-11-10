@@ -7,13 +7,11 @@ namespace CompanyData.Models
     {
         public virtual long ID { get; set; }
         [Required]
-        [StringLength(100, MinimumLength = 2,
-        ErrorMessage = "FirstName should be minimum 2 characters and a maximum of 100 characters")]
+        [StringLength(100, MinimumLength = 2, ErrorMessage = "FirstName should be minimum 2 characters and a maximum of 100 characters")]
         [DataType(DataType.Text)]
         public virtual string FirstName { get; set; }
         [Required]
-        [StringLength(100, MinimumLength = 2,
-        ErrorMessage = "LastName should be minimum 2 characters and a maximum of 100 characters")]
+        [StringLength(100, MinimumLength = 2, ErrorMessage = "LastName should be minimum 2 characters and a maximum of 100 characters")]
         [DataType(DataType.Text)]
         public virtual string LastName { get; set; }
         [Required]

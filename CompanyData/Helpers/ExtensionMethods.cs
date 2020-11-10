@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 using System.Collections.Generic;
-using CompanyData.Entities;
+using CompanyData.Models;
 
 namespace CompanyData.Helpers
 {

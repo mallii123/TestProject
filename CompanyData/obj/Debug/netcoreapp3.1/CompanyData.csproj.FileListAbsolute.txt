@@ -170,6 +170,8 @@ D:\Projects\CompanyData\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.d
 D:\Projects\CompanyData\obj\Debug\netcoreapp3.1\CompanyData.csproj.CoreCompileInputs.cache
 D:\Projects\CompanyData\obj\Debug\netcoreapp3.1\CompanyData.MvcApplicationPartsAssemblyInfo.cache
 D:\Projects\CompanyData\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\App.config
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\appsettings.json
@@ -185,6 +187,7 @@ C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\An
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\AutoMapper.dll
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\Iesi.Collections.dll
+C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\log4net.dll
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
@@ -322,8 +325,6 @@ C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\ru
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
-C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
-C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
@@ -344,4 +345,3 @@ C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\obj\Debug\netcoreapp3.1\st
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\obj\Debug\netcoreapp3.1\CompanyData.dll
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\obj\Debug\netcoreapp3.1\CompanyData.pdb
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\obj\Debug\netcoreapp3.1\CompanyData.genruntimeconfig.cache
-C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\obj\Debug\netcoreapp3.1\CompanyData.csprojAssemblyReference.cache

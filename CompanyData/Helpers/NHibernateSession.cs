@@ -1,7 +1,7 @@
 ﻿using NHibernate;
 using NHibernate.Cfg;
 
-namespace CompanyData
+namespace CompanyData.Helpers
 {
     class NHibernateSession
     {

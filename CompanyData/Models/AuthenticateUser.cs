@@ -2,7 +2,7 @@
 
 namespace CompanyData.Models
 {
-    public class AuthenticateModel
+    public class AuthenticateUser
     {
         [Required]
         public string Username { get; set; }

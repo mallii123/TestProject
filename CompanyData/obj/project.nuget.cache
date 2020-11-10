@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4evkaSRqvw6+12OzoSlc2uQgWav114F8mQicxO9OFJ5i3wAaMbsG6L1id4pA4pSd+0Bu6PiXdRn00UF/oCa4bw==",
+  "dgSpecHash": "EKj90enyND2oCXPCdB3iyyr7jpplebjMD7ItrnWAS5vvdMtpJioU0rXOy+mKCWdF0rSzZomXbZwe0wbXTbUppw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Patryk\\Desktop\\Projekty\\Projects\\CompanyData\\CompanyData.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\Patryk\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\Patryk\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.0.1\\automapper.extensions.microsoft.dependencyinjection.8.0.1.nupkg.sha512",
     "C:\\Users\\Patryk\\.nuget\\packages\\iesi.collections\\4.0.4\\iesi.collections.4.0.4.nupkg.sha512",
+    "C:\\Users\\Patryk\\.nuget\\packages\\log4net\\2.0.12\\log4net.2.0.12.nupkg.sha512",
     "C:\\Users\\Patryk\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
     "C:\\Users\\Patryk\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Patryk\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.8\\microsoft.aspnetcore.jsonpatch.3.1.8.nupkg.sha512",

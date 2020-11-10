@@ -11,7 +11,7 @@
       "NETCOREAPP3_1"
     ],
     "languageVersion": "8.0",
-    "platform": "",
+    "platform": "x64",
     "allowUnsafe": false,
     "warningsAsErrors": false,
     "optimize": false,
@@ -37,6 +37,7 @@
           "NUnit": "3.12.0",
           "Swashbuckle.AspNetCore.Swagger": "5.6.3",
           "System.Data.SqlClient": "4.8.2",
+          "log4net": "2.0.12",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.1.0.0",
@@ -371,6 +372,20 @@
         },
         "compile": {
           "lib/netstandard1.3/Iesi.Collections.dll": {}
+        }
+      },
+      "log4net/2.0.12": {
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/log4net.dll": {
+            "assemblyVersion": "2.0.12.0",
+            "fileVersion": "2.0.12.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/log4net.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.7": {
@@ -3989,6 +4004,13 @@
       "sha512": "sha512-jlebSjv2a7amYfKXEUsPDSf2Yi9r0/FkvvT6Dy7ehl7z8du+dTGqKDu+fYbnE+WuIz/v3prYm1jpBljMrY1p+Q==",
       "path": "iesi.collections/4.0.4",
       "hashPath": "iesi.collections.4.0.4.nupkg.sha512"
+    },
+    "log4net/2.0.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9P67BCftJ7KG+B7rNOM1A9KczUwyEDed6zbAddy5Cj/73xVkzi+rEAHeOgUnW5wDqy1JFlY8+oTP0m1PgJ03Tg==",
+      "path": "log4net/2.0.12",
+      "hashPath": "log4net.2.0.12.nupkg.sha512"
     },
     "Microsoft.AspNet.WebApi.Client/5.2.7": {
       "type": "package",

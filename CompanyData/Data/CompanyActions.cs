@@ -1,14 +1,16 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 using NHibernate;
 using CompanyData.Models;
 using CompanyData.Design;
-
+using CompanyData.Helpers;
 
 namespace CompanyData.Data
 {
-    public class CompanyActions : IRequiredHttpActions<Company>
+    public class CompanyActions : ICompanyRequiredHttpActions
     {
+        private static readonly log4net.ILog _log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         public long Create(Company company)
         {
             try
@@ -23,8 +25,9 @@ namespace CompanyData.Data
                 }             
                 return company.ID;
             }
-            catch
+            catch(Exception e)
             {
+                _log.Error("Error in long Create(Company company)", e);
                 return -1;
             }
         }
@@ -40,8 +43,9 @@ namespace CompanyData.Data
                 CompaniesFiltrs CompaniesFiltrs = new CompaniesFiltrs(companies, CompanySearchParameters);
                 return CompaniesFiltrs.GetFiltredCompaniesByParameters();
             }
-            catch
+            catch(Exception e)
             {
+                _log.Error("Error in List<Company> Search(CompanySearchParameters CompanySearchParameters)", e);
                 return companies;
             }
         }
@@ -60,8 +64,9 @@ namespace CompanyData.Data
                 }
                 return true;
             }
-            catch
+            catch(Exception e)
             {
+                _log.Error("Error in bool Update(Company company)", e);
                 return false;
             }
         }
@@ -81,8 +86,9 @@ namespace CompanyData.Data
                 }
                 return true;
             }
-            catch
+            catch(Exception e)
             {
+                _log.Error("Error in bool Delete(long id)", e);
                 return false;
             }
             

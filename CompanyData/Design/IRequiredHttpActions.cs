@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 namespace CompanyData.Design
 {
-    interface IRequiredHttpActions<T>
+    interface ICompanyRequiredHttpActions
     {
-        long Create(T company);
-        List<T> Search(CompanySearchParameters CompanySearchParameters);
-        bool Update(T company);
+        long Create(Company company);
+        List<Company> Search(CompanySearchParameters CompanySearchParameters);
+        bool Update(Company company);
         bool Delete(long id);
     }
 }

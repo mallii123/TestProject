@@ -31,7 +31,7 @@ namespace CompanyData.Controllers
             }
             return NotFound();
         }
-        [HttpPost("search")]
+        [HttpGet("search")]
         [AllowAnonymous]
         public ActionResult<CompanySearchParameters> Search(CompanySearchParameters CompanySearchParameters)
         {

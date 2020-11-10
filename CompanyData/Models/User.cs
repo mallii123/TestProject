@@ -1,4 +1,4 @@
-﻿namespace CompanyData.Entities
+﻿namespace CompanyData.Models
 {
     public class User
     {
