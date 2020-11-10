@@ -2,6 +2,7 @@
 using CompanyData.Models;
 using CompanyData.Data;
 using Microsoft.AspNetCore.Authorization;
+using System.Collections.Generic;
 using log4net;
 
 namespace CompanyData.Controllers
@@ -31,15 +32,17 @@ namespace CompanyData.Controllers
             {
                 return Ok(companyID);
             }
-            return NotFound();
+            return Problem("Error under create, exception saved in traces");
         }
         [HttpGet("search")]
         [AllowAnonymous]
         public ActionResult<CompanySearchParameters> Search(CompanySearchParameters CompanySearchParameters)
         {
             _log.Info("CALL: Search(CompanySearchParameters CompanySearchParameters)");
-            var companies = _companyActions.Search(CompanySearchParameters);
-            return Ok(new { Results = companies });
+            List<Company> companies = _companyActions.Search(CompanySearchParameters);
+            if(companies.Count != 0)
+                return Ok(new { Results = companies });
+            return NotFound();
         }
         [HttpPut("update/{id}")]
         public ActionResult<Company> Update(long id, Company company)
@@ -52,7 +55,7 @@ namespace CompanyData.Controllers
             {
                 return Ok("Update Done");
             }
-            return NotFound();
+            return Problem("Error under update, exception saved in traces");
         }
         [HttpDelete("delete/{id}")]
         public ActionResult Delete(long id)
@@ -63,7 +66,7 @@ namespace CompanyData.Controllers
             {
                 return Ok("Update Done");
             }
-            return NotFound();
+            return Problem("Error under delete, exception saved in traces");
         }
     }
 }

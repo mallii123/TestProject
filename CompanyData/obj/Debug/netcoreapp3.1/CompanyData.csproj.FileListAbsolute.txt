@@ -347,3 +347,4 @@ C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\Mi
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\bin\Debug\netcoreapp3.1\log4net.config
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\obj\Debug\netcoreapp3.1\CompanyData.csproj.CoreCompileInputs.cache
 C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\obj\Debug\netcoreapp3.1\CompanyData.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData\obj\Debug\netcoreapp3.1\CompanyData.csprojAssemblyReference.cache

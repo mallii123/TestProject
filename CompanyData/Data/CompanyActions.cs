@@ -47,8 +47,8 @@ namespace CompanyData.Data
             catch(Exception e)
             {
                 _log.Error("Error in List<Company> Search(CompanySearchParameters CompanySearchParameters)", e);
-                return companies;
             }
+            return companies;
         }
 
         public bool Update(Company company)
