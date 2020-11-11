@@ -36,10 +36,7 @@ namespace CompanyData.Services
                             || employee.LastName.Contains(keyword)
                             select employee
                             ).Count() > 0
-                    select company;
-
-
-            filteredCompaniesWithKeyword = session.Query<Company>().Where(b => b.Name == keyword);
+                    select company;         
 
             return filteredCompaniesWithKeyword.ToList();
         }
