@@ -3,71 +3,64 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using CompanyData.Models;
+using NHibernate;
 using Microsoft.EntityFrameworkCore.Internal;
 
 namespace CompanyData.Data
 {
-    public class CompaniesFiltrs
+    public static class CompaniesFiltrs
     {
-        private List<Company> companies;
-        private CompanySearchParameters companySearchParameters;
-
-        public CompaniesFiltrs(List<Company> companies, CompanySearchParameters companySearchParameters)
+        public static List<Company> GetCompaniesByAllParameters(ISession session, CompanySearchParameters companySearchParameters)
         {
-            this.companies = companies;
-            this.companySearchParameters = companySearchParameters;
-        }
-        public List<Company> GetFiltredCompaniesByParameters()
-        {
-            List<Company> filteredCompanies = new List<Company>();
+            List<Company> companiesList = new List<Company>();
 
             if(!String.IsNullOrEmpty(companySearchParameters.Keyword))
-                filteredCompanies.AddRange(GetFilteredCompaniesWithKeyword());
+                companiesList.AddRange(GetCompaniesWithKeyword(session, companySearchParameters.Keyword));
 
             if (companySearchParameters.EmployeeDateOfBirthFrom.HasValue || companySearchParameters.EmployeeDateOfBirthTo.HasValue)
-                filteredCompanies.AddRange(GetFilteredCompaniesWithDate());
+                companiesList.AddRange(GetCompaniesWithDate(session, companySearchParameters.EmployeeDateOfBirthFrom, companySearchParameters.EmployeeDateOfBirthTo));
 
             if (companySearchParameters.EmployeeJobTitles != null && companySearchParameters.EmployeeJobTitles.Count > 0)
-                filteredCompanies.AddRange(GetFilteredCompaniesWithTitle());
+                companiesList.AddRange(GetCompaniesWithTitle(session, companySearchParameters.EmployeeJobTitles));
 
-            return filteredCompanies.Distinct().ToList();
+            return companiesList.Distinct().ToList();
         }
-        public List<Company> GetFilteredCompaniesWithKeyword()
+        public static List<Company> GetCompaniesWithKeyword(ISession session, string keyword)
         {
             var filteredCompaniesWithKeyword =
-                    from company in companies
-                    where company.Name.Contains(companySearchParameters.Keyword)
+                    from company in session.Query<Company>()
+                    where company.Name.Contains(keyword)
                     || (
                             from employee in company.Employees
-                            where employee.FirstName.Contains(companySearchParameters.Keyword)
-                            || employee.LastName.Contains(companySearchParameters.Keyword)
+                            where employee.FirstName.Contains(keyword)
+                            || employee.LastName.Contains(keyword)
                             select employee
                             ).Count() > 0
                     select company;
             return filteredCompaniesWithKeyword.ToList();
         }
-        public List<Company> GetFilteredCompaniesWithDate()
+        public static List<Company> GetCompaniesWithDate(ISession session, DateTime? employeeDateOfBirthFrom, DateTime? employeeDateOfBirthTo)
         {
             var filteredCompaniesWithDate =
-                from company in companies
+                from company in session.Query<Company>()
                 where (
                         from employee in company.Employees
-                        where employee.DateOfBirth.Value.CompareTo(companySearchParameters.EmployeeDateOfBirthFrom ==null
-                                                                ? DateTime.MinValue : companySearchParameters.EmployeeDateOfBirthFrom) >= 0
-                        && employee.DateOfBirth.Value.CompareTo(companySearchParameters.EmployeeDateOfBirthTo == null 
-                                                            ? DateTime.MaxValue : companySearchParameters.EmployeeDateOfBirthTo) <= 0 
+                        where employee.DateOfBirth.Value.CompareTo(employeeDateOfBirthFrom == null
+                                                                ? DateTime.MinValue : employeeDateOfBirthFrom) >= 0
+                        && employee.DateOfBirth.Value.CompareTo(employeeDateOfBirthTo == null 
+                                                            ? DateTime.MaxValue : employeeDateOfBirthTo) <= 0 
                         select employee
                         ).Count() > 0
                 select company;
             return filteredCompaniesWithDate.ToList();
         }
-        public List<Company> GetFilteredCompaniesWithTitle()
+        public static List<Company> GetCompaniesWithTitle(ISession session, List<JobTitle> employeeJobTitles)
         {
             var filteredCompaniesWithTitle =
-             from company in companies
+             from company in session.Query<Company>()
              where (
                      from employee in company.Employees
-                     where companySearchParameters.EmployeeJobTitles.Contains(employee.JobTitle.Value)
+                     where employeeJobTitles.Contains(employee.JobTitle.Value)
                      select company
                      ).Count() > 0
              select company;

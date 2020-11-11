@@ -36,13 +36,11 @@ namespace CompanyData.Data
         {
             List<Company> companies = new List<Company>();
             try
-            {               
+            {                               
                 using (ISession session = NHibernateSession.OpenSession())
                 {
-                    companies = session.Query<Company>().ToList();
-                }
-                CompaniesFiltrs CompaniesFiltrs = new CompaniesFiltrs(companies, CompanySearchParameters);
-                return CompaniesFiltrs.GetFiltredCompaniesByParameters();
+                    companies = CompaniesFiltrs.GetCompaniesByAllParameters(session, CompanySearchParameters);
+                }                              
             }
             catch(Exception e)
             {
