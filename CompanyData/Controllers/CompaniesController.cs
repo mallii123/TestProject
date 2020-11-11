@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using CompanyData.Models;
-using CompanyData.Data;
+using CompanyData.Services;
 using Microsoft.AspNetCore.Authorization;
 using System.Collections.Generic;
 using log4net;
@@ -14,7 +14,7 @@ namespace CompanyData.Controllers
     public class CompaniesController : ControllerBase
     {
         private static readonly ILog _log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-        private CompanyActions _companyActions;
+        private readonly CompanyActions _companyActions;
 
         public CompaniesController()
         {
@@ -34,34 +34,39 @@ namespace CompanyData.Controllers
             }
             return Problem("Error under create, exception saved in traces");
         }
+
         [HttpGet("search")]
         [AllowAnonymous]
         public ActionResult<CompanySearchParameters> Search(CompanySearchParameters CompanySearchParameters)
         {
             _log.Info("CALL: Search(CompanySearchParameters CompanySearchParameters)");
             List<Company> companies = _companyActions.Search(CompanySearchParameters);
+
             if(companies.Count != 0)
                 return Ok(new { Results = companies });
             return NotFound();
         }
+
         [HttpPut("update/{id}")]
         public ActionResult<Company> Update(long id, Company company)
         {
             _log.Info("CALL: Update(long id, Company company)");
             company.ID = id;
-
             var udpateDone = _companyActions.Update(company);
+
             if (udpateDone)
             {
                 return Ok("Update Done");
             }
             return Problem("Error under update, exception saved in traces");
         }
+
         [HttpDelete("delete/{id}")]
         public ActionResult Delete(long id)
         {
             _log.Info("CALL: Delete(long id)");
             var udpateDone = _companyActions.Delete(id);
+
             if (udpateDone)
             {
                 return Ok("Update Done");

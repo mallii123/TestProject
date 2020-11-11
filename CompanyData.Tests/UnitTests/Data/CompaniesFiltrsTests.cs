@@ -1,4 +1,4 @@
-using CompanyData.Data;
+using CompanyData.Services;
 using CompanyData.Models;
 using System.Collections.Generic;
 using System;
@@ -19,6 +19,7 @@ namespace CompanyData.Tests.UnitTests
         [SetUp]
         public void Setup()
         {
+            #region InitializationDumpCompanies
             companies = new List<Company>();
 
             company1 = new Company
@@ -97,6 +98,7 @@ namespace CompanyData.Tests.UnitTests
 
             };
             companies.Add(company4);
+            #endregion
 
             var sessionMock = new Mock<ISession>();
             session = sessionMock.Object;

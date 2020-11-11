@@ -1,21 +1,15 @@
 ﻿using CompanyData.Models;
 using CompanyData.Helpers;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CompanyData.Design; 
 
 namespace CompanyData.Services
 {
-    public interface IUserService
-    {
-        Task<User> Authenticate(string username, string password);
-        Task<IEnumerable<User>> GetAll();
-    }
-
     public class UserService : IUserService
     {
-        private List<User> _users = new List<User>
+        private readonly List<User> _users = new List<User>
         {
             new User { Id = 1, FirstName = "Test", LastName = "User", Username = "admin", Password = "admin" }
         };

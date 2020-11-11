@@ -7,7 +7,7 @@ using CompanyData.Design;
 using CompanyData.Helpers;
 using log4net;
 
-namespace CompanyData.Data
+namespace CompanyData.Services
 {
     public class CompanyActions : ICompanyRequiredHttpActions
     {

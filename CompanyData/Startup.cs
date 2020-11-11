@@ -6,6 +6,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Authentication;
 using CompanyData.Helper;
 using CompanyData.Services;
+using CompanyData.Design;
 using Microsoft.Extensions.Logging;
 
 namespace CompanyData
