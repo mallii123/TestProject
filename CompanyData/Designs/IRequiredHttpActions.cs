@@ -1,9 +1,9 @@
 ﻿using CompanyData.Models;
 using System.Collections.Generic;
 
-namespace CompanyData.Design
+namespace CompanyData.Designs
 {
-    interface ICompanyRequiredHttpActions
+    public interface ICompanyRequiredHttpActions
     {
         long Create(Company company);
         List<Company> Search(CompanySearchParameters CompanySearchParameters);

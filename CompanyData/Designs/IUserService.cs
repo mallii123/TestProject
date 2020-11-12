@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using CompanyData.Models;
 
-namespace CompanyData.Design
+namespace CompanyData.Designs
 {
     public interface IUserService
     {

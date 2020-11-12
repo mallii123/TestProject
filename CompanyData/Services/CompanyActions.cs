@@ -3,7 +3,7 @@ using System.Linq;
 using System.Collections.Generic;
 using NHibernate;
 using CompanyData.Models;
-using CompanyData.Design;
+using CompanyData.Designs;
 using CompanyData.Helpers;
 using log4net;
 
@@ -12,7 +12,7 @@ namespace CompanyData.Services
     public class CompanyActions : ICompanyRequiredHttpActions
     {
         private static readonly ILog _log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-        public long Create(Company company)
+        public virtual long Create(Company company)
         {
             try
             {
@@ -32,7 +32,7 @@ namespace CompanyData.Services
                 return -1;
             }
         }
-        public List<Company> Search(CompanySearchParameters CompanySearchParameters)
+        public virtual List<Company> Search(CompanySearchParameters CompanySearchParameters)
         {
             List<Company> companies = new List<Company>();
             try
@@ -49,7 +49,7 @@ namespace CompanyData.Services
             return companies;
         }
 
-        public bool Update(Company company)
+        public virtual bool Update(Company company)
         {
             try
             {
@@ -69,7 +69,7 @@ namespace CompanyData.Services
                 return false;
             }
         }
-        public bool Delete(long id)
+        public virtual bool Delete(long id)
         {
             try
             {

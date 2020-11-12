@@ -3,7 +3,7 @@ using CompanyData.Helpers;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using CompanyData.Design; 
+using CompanyData.Designs; 
 
 namespace CompanyData.Services
 {

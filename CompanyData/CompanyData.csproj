@@ -14,13 +14,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Mapping\Company.hbm.xml" />
-    <None Remove="Mapping\Employee.hbm.xml" />
+    <None Remove="Mappings\Company.hbm.xml" />
+    <None Remove="Mappings\Employee.hbm.xml" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Mapping\Company.hbm.xml" />
-    <EmbeddedResource Include="Mapping\Employee.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Company.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Employee.hbm.xml" />
   </ItemGroup>
 
   <ItemGroup>

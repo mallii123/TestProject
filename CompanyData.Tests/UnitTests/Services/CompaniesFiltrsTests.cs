@@ -122,6 +122,7 @@ namespace CompanyData.Tests.UnitTests
 
             Assert.AreEqual(filtredCompanies, expectedFiltredCompanies);
         }
+
         [Test]
         public void GetFiltredCompaniesByParametersTest_SpecificDataTimeCheck_Pass()
         {
@@ -139,6 +140,7 @@ namespace CompanyData.Tests.UnitTests
 
             Assert.AreEqual(filtredCompanies, expectedFiltredCompanies);
         }
+
         [Test]
         public void GetFiltredCompaniesByParametersTest_CheckTitles_Pass()
         {
@@ -155,6 +157,7 @@ namespace CompanyData.Tests.UnitTests
 
             Assert.AreEqual(filtredCompanies, expectedFiltredCompanies);
         }
+
         [Test]
         public void GetFiltredCompaniesByParametersTest_AllParametersCheck_Pass()
         {
@@ -174,6 +177,7 @@ namespace CompanyData.Tests.UnitTests
 
             Assert.AreEqual(filtredCompanies, expectedFiltredCompanies);
         }
+
         [Test]
         public void GetFiltredCompaniesByParametersTest_EmptyEmployeesListCheck_Pass()
         {
@@ -235,6 +239,18 @@ namespace CompanyData.Tests.UnitTests
             {
                 company4
             };
+
+            List<Company> filtredCompanies = CompaniesFiltrs.GetCompaniesByAllParameters(session, companySearchParameters);
+
+            Assert.AreEqual(filtredCompanies, expectedFiltredCompanies);
+        }
+
+        [Test]
+        public void GetFiltredCompaniesByParametersTest_EmptyParameters_Pass()
+        {
+            var companySearchParameters = new CompanySearchParameters();
+            List<Company> expectedFiltredCompanies = new List<Company>();
+
 
             List<Company> filtredCompanies = CompaniesFiltrs.GetCompaniesByAllParameters(session, companySearchParameters);
 

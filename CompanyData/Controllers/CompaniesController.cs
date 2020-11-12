@@ -14,7 +14,7 @@ namespace CompanyData.Controllers
     public class CompaniesController : ControllerBase
     {
         private static readonly ILog _log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-        private readonly CompanyActions _companyActions;
+        public CompanyActions _companyActions;
 
         public CompaniesController()
         {
@@ -32,7 +32,7 @@ namespace CompanyData.Controllers
             {
                 return Ok(companyID);
             }
-            return Problem("Error under create, exception saved in traces");
+            return Problem("Error under company create, exception saved in traces");
         }
 
         [HttpGet("search")]
@@ -52,26 +52,26 @@ namespace CompanyData.Controllers
         {
             _log.Info("CALL: Update(long id, Company company)");
             company.ID = id;
-            var udpateDone = _companyActions.Update(company);
+            var updateDone = _companyActions.Update(company);
 
-            if (udpateDone)
+            if (updateDone)
             {
                 return Ok("Update Done");
             }
-            return Problem("Error under update, exception saved in traces");
+            return Problem("Error under company update, exception saved in traces");
         }
 
         [HttpDelete("delete/{id}")]
         public ActionResult Delete(long id)
         {
             _log.Info("CALL: Delete(long id)");
-            var udpateDone = _companyActions.Delete(id);
+            var updateDone = _companyActions.Delete(id);
 
-            if (udpateDone)
+            if (updateDone)
             {
                 return Ok("Update Done");
             }
-            return Problem("Error under delete, exception saved in traces");
+            return Problem("Error under company delete, exception saved in traces");
         }
     }
 }

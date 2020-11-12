@@ -4271,3 +4271,41 @@ System.NotSupportedException: Int32 CompareTo(System.Object)
 2020-11-11 19:29:05,823 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
 2020-11-11 19:29:05,825 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData
 2020-11-11 19:29:05,965 [2] INFO  Microsoft.Hosting.Lifetime - Application is shutting down...
+2020-11-12 09:00:42,376 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+2020-11-12 09:00:42,388 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2020-11-12 09:00:42,390 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2020-11-12 09:00:42,392 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData
+2020-11-12 09:00:45,066 [2] INFO  Microsoft.Hosting.Lifetime - Application is shutting down...
+2020-11-12 18:05:02,209 [2] INFO  Microsoft.Hosting.Lifetime - Application is shutting down...
+2020-11-12 18:05:02,295 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+2020-11-12 18:05:02,297 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2020-11-12 18:05:02,299 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2020-11-12 18:05:02,300 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData
+2020-11-12 18:08:34,263 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+2020-11-12 18:08:34,275 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2020-11-12 18:08:34,277 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2020-11-12 18:08:34,278 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData
+2020-11-12 18:08:35,678 [2] INFO  Microsoft.Hosting.Lifetime - Application is shutting down...
+2020-11-12 18:20:48,386 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+2020-11-12 18:20:48,402 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2020-11-12 18:20:48,404 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2020-11-12 18:20:48,405 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData
+2020-11-12 18:36:15,580 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+2020-11-12 18:36:15,593 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2020-11-12 18:36:15,595 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2020-11-12 18:36:15,597 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData
+2020-11-12 18:38:48,164 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+2020-11-12 18:38:48,177 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2020-11-12 18:38:48,179 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2020-11-12 18:38:48,181 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData
+2020-11-12 18:38:49,658 [2] INFO  Microsoft.Hosting.Lifetime - Application is shutting down...
+2020-11-12 18:40:40,314 [2] INFO  Microsoft.Hosting.Lifetime - Application is shutting down...
+2020-11-12 18:40:40,499 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+2020-11-12 18:40:40,501 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2020-11-12 18:40:40,502 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2020-11-12 18:40:40,504 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData
+2020-11-12 19:24:06,993 [2] INFO  Microsoft.Hosting.Lifetime - Application is shutting down...
+2020-11-12 19:24:07,112 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+2020-11-12 19:24:07,114 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2020-11-12 19:24:07,116 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2020-11-12 19:24:07,118 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\Patryk\Desktop\Projekty\Projects\CompanyData

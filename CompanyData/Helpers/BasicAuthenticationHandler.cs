@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.Extensions.Options;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Authorization;
-using CompanyData.Design;
+using CompanyData.Designs;
 using CompanyData.Models;
 
 namespace CompanyData.Helper
